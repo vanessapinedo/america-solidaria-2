@@ -1,0 +1,464 @@
+/* Import Google Fonts */
+
+@font-face {
+    font-family: "BwQuinta-Regular";
+    src: url("../tipografia/BwQuintaPro-Regular.otf");
+}
+
+@import url("//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Body */
+body{
+    font-family:"BwQuinta-Regular", "Roboto";
+    font-weight: 300;
+    margin: 0px;
+}
+
+/* header ------------------------------------------------------------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: hsl(240, 9%, 98%);
+    color: #0056b3;
+}
+
+/* Estilos para el logo */
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la navegación */
+header nav {
+    display: flex;
+    width: 100% !important;
+    color: #0056b3;
+}
+
+/* Estilos para los enlaces de navegación */
+header nav a {
+    margin: 0 10px;
+    color: #0056b3;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: #f9f9fa;
+}
+
+/* Estilos para los enlaces de navegación al pasar el ratón */
+header nav a:hover {
+    background-color: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+    /* Establece la posición fija del boton sticky */
+    .fixed-button {
+        position: fixed;
+        bottom: 80px; 
+        right: 0px; 
+        z-index: 9999;
+        
+        /* Estilos para hacer que se vea como un botón */
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: #d35400;
+        color: #fff;
+        border-bottom-left-radius:20px;
+        border-top-left-radius:20px;   
+        text-decoration: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow:0px 2px 7px 1px rgba(0,0,0,0.5) !important;
+        font-size: 25px;
+    }
+
+    /* Estilos adicionales para cuando el cursor pase sobre el botón */
+    .fixed-button:hover {
+        background-color: #fff;
+        color:#d35400;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+/* mision-vision ------------------------------------------------------------------------------ */
+
+
+  
+main .mision h3{
+    font-size:36px;
+    line-height:25px;
+
+}
+.txt-mision {
+  display: flex;
+  flex-direction:column;
+  justify-content: center; 
+  align-items: center; 
+  height: 300px;
+  padding: 15%; 
+  color:#666666;
+}
+.txt-vision {
+    display: flex;
+    flex-direction:column;
+    justify-content: center; 
+    text-align: center;
+    align-items: center; 
+    height: 300px; 
+    padding: 15%;
+    color:#666666;
+  }
+  
+
+.ver-mas-boton {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 6px 16px;
+    color: #0056b3;
+    border-color: #0056b3;
+    font-weight: bold;
+}
+
+.ver-mas-boton-testimonios {
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+.barra-divisora {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+/* testimonos --------------------------------------------------------------------------------- */
+
+
+.testi-voluntarios {
+    height: 300px;
+    background-image: url(../imagenes-home/testimonios-voluntarios.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 45px;
+    margin-right: 22.5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*  contenido dentro del artículo  voluntarios */
+
+.testi-voluntarios .content {
+    text-align: center;
+    border-bottom: #fff;
+}
+
+.testi-voluntarios input[type="button"] {
+    background-color:transparent;
+    color: #fff;
+    border: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testi-voluntarios input[type="button"]:hover {
+    background-color: #fff;
+    color: #0056b3;
+}
+
+.testi-voluntarios {
+
+}
+
+/* contenido dentro del artículo  beneficiarios*/
+
+.testi-beneficiarios {
+    height: 300px;
+    background-image: url(../imagenes-home/testimonios-beneficiarios.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 45px;
+    margin-left: 22.5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.testi-beneficiarios .content {
+    text-align: center;
+}
+
+.testi-beneficiarios input[type="button"] {
+    background-color: transparent;
+    color: #fff;
+    border: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testi-beneficiarios input[type="button"]:hover {
+    background-color: #ffffff;
+    color: #d35400;
+}
+
+
+/* Grilla de 12 columnas */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    padding: 0px;
+}
+
+/* grilla dividida */
+
+.txt-mision {
+    grid-column: span 6;
+    text-align: center;
+}
+.img-mision {
+    grid-column: span 6;
+}
+
+.txt-vision {
+    grid-column: span 6;
+    text-align: center;
+}
+.img-vision {
+    grid-column: span 6;
+}
+
+.testi-voluntarios {
+    grid-column: span 6;
+}
+.testi-beneficiarios {
+    grid-column: span 6;
+}
+
+/* Filas ocupando 12 columnas */
+
+.grid-container .nav,
+.grid-container .portada,
+.grid-container .mision,
+.grid-container .vision,
+.grid-container .destacados,
+.grid-container .proyectos {
+    grid-column: span 12;   
+    text-align: center;
+}
+
+/* Estilos para las imágenes en general */
+
+.grid-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos para pantallas más pequeñas (tablets y móviles) */
+
+@media only screen and (max-width: 768px) {
+
+    /* Ocultar imágenes en la versión para móvil */
+
+    .img-mision,
+    .img-vision {
+        display: none;
+    }
+    .txt-mision {
+        grid-column: span 12;
+    }
+
+    .txt-vision {
+        grid-column: span 12;
+    }
+
+    /* Ajustar el ancho de las secciones del footer en la versión para móvil */
+
+    footer .ft-1,
+    footer .redessociales {
+        grid-column: span 12;
+        text-align: left;
+    }
+    .testi-voluntarios {
+        grid-column: span 12;
+    }
+    .testi-beneficiarios {
+        grid-column: span 12;
+    }
+}
+
+/* footer ------------------------------------------------------------------------------ */ 
+
+
+footer{
+    /* Estilos generales para el footer */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+    padding: 20px;
+    background-color: #0e5e94;
+    color: #ecf0f1;
+    font-size: 13px;
+    line-height: 13.2px;
+    transform: translatex(0px) translatey(0px);
+}
+
+/* Estilos para las secciones del footer */
+/* Link email*/
+footer a:nth-child(2){
+    color:#ecf0f1;
+    text-decoration:none;
+}
+/* Link menu*/
+footer p a{
+    color:#fcfcfc;
+    font-weight:400;
+    text-decoration:none;
+}
+
+/* Link menu(hover) */
+footer p a:hover{
+    color:#e4e4f5;
+}
+/* Redessociales */
+footer .redessociales{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.ft-1 {
+    grid-column: span 3;
+    padding: 10px;
+    text-align: left;
+}
+
+.redessociales {
+    grid-column: 10 / span 3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+.redessociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociales a {
+    margin: 20px; 
+}
+
+.redessociales img {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+}
+
+/* Estilos para el menú desplegable en versión móvil */
+
+.navbar-nav .dropdown-menu {
+    background-color: #0c84d4;
+    border-radius: 0;
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+    background-color: #6e6efb;
+    color: #ffffff;
+}
+
+/* Estilos para la navegación en versión móvil */
+@media only screen and (min-width: 769px) {
+    header nav.nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+#carouselExampleIndicators {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.video-principal {
+    margin-bottom: 40px;
+}
+
+.carousel-caption {
+    bottom: 8.25rem;
+}
+
+.portada {
+    position: relative;
+}
+
+.texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.texto-centrado h1 {
+    margin-bottom: 20px;
+    background-color: rgba(0, 55, 255, 0.445); 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-right: 90px;
+}
+
+.texto-centrado p {
+    font-size: 18px;
+    background-color: rgba(0, 55, 255, 0.445); 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 380px;
+    margin: auto;
+    
+}
